@@ -61,6 +61,7 @@ margin_bottom = 158.0
 margin_top = 178.0
 margin_right = 518.0
 margin_bottom = 238.0
+scene_to_load = "res://Scenes/Options.tscn"
 
 [node name="CenterContainer" type="CenterContainer" parent="Menu/CenterRow"]
 margin_left = 522.0
