@@ -5,14 +5,14 @@
 [node name="NewGameButton" instance=ExtResource( 1 )]
 anchor_right = 0.816
 anchor_bottom = 0.311
-margin_right = -0.480103
-margin_bottom = 0.0799866
+margin_right = -61.48
+margin_bottom = -133.92
 scene_to_load = "res://TileMap.tscn"
 
 [node name="Label" parent="." index="0"]
-margin_left = -0.617126
-margin_top = -2.85485
-margin_right = -0.617188
-margin_bottom = 6.14514
+margin_left = 4.6568
+margin_top = -0.958374
+margin_right = -8.3432
+margin_bottom = 98.0416
 text = "New Game
 "
