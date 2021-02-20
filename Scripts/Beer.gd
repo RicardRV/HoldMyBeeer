@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 export var FRICTION = 10
 export var ACCELERATION = 100
-export var MAX_SPEED = 80
+export var MAX_SPEED = 5
 
 var velocity = Vector2.ZERO
 var collide = Vector2.ZERO

@@ -52,11 +52,10 @@ custom_constants/separation = 10
 alignment = 1
 
 [node name="NewGameButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 2 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_right = 360.0
-margin_bottom = 60.0
-scene_to_load = "res://Scenes/TileMap.tscn"
+margin_top = 18.0
+margin_right = 518.0
+margin_bottom = 78.0
+scene_to_load = "res://Scenes/GameMap.tscn"
 
 [node name="OptionsButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 5 )]
 anchor_right = 0.0
