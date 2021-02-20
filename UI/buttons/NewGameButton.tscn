@@ -10,8 +10,8 @@ margin_bottom = -133.92
 scene_to_load = "res://TileMap.tscn"
 
 [node name="Label" parent="." index="0"]
-margin_left = 1.58575
-margin_top = 2.00002
+margin_left = 1.58578
+margin_top = -0.828395
 margin_right = -11.4142
-margin_bottom = 5.00002
+margin_bottom = 2.17161
 text = "NEW GAME"

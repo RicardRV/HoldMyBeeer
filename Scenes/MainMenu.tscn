@@ -16,9 +16,9 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_left = 5.70422
+margin_left = 1.70422
 margin_top = -0.923203
-margin_right = 1284.7
+margin_right = 1280.7
 margin_bottom = 732.077
 texture = ExtResource( 1 )
 __meta__ = {
@@ -27,9 +27,9 @@ __meta__ = {
 
 [node name="Menu" type="VBoxContainer" parent="."]
 margin_left = 440.319
-margin_top = 304.409
+margin_top = 295.42
 margin_right = 800.319
-margin_bottom = 658.409
+margin_bottom = 649.42
 alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -52,34 +52,32 @@ custom_constants/separation = 10
 alignment = 1
 
 [node name="NewGameButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 2 )]
-anchor_top = -0.03
-anchor_right = 0.0
-anchor_bottom = -0.03
+anchor_left = 0.0416667
+anchor_top = 0.015
+anchor_right = 0.0416667
+anchor_bottom = 0.015
 margin_right = 360.0
 margin_bottom = 60.0
 custom_colors/font_color = Color( 0.984314, 0.984314, 0.984314, 1 )
 scene_to_load = "res://Scenes/TileMap.tscn"
 
-[node name="ContinueButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
-anchor_left = 0.00277778
-anchor_top = 0.015
-anchor_right = 0.00277778
-anchor_bottom = 0.015
+[node name="OptionsButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 5 )]
+anchor_top = 0.065
+anchor_right = 0.0
+anchor_bottom = 0.065
 margin_top = 70.0
 margin_right = 360.0
 margin_bottom = 130.0
 custom_colors/font_color = Color( 0.984314, 0.984314, 0.984314, 1 )
+scene_to_load = "res://Scenes/Options.tscn"
 
-[node name="OptionsButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 5 )]
-anchor_left = -0.0277778
-anchor_top = -0.065
-anchor_right = -0.0277778
-anchor_bottom = -0.065
+[node name="QuitButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
+anchor_top = 0.12
+anchor_bottom = 0.12
 margin_top = 140.0
 margin_right = 360.0
 margin_bottom = 200.0
 custom_colors/font_color = Color( 0.984314, 0.984314, 0.984314, 1 )
-scene_to_load = "res://Scenes/Options.tscn"
 
 [node name="FadeIn" parent="." instance=ExtResource( 3 )]
 visible = false
