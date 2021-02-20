@@ -1,5 +1,5 @@
 extends Control
-var scene_path_to_load
+var scene_path_to_load=""
 
 func _ready():
 	#keyboard selection available
@@ -12,10 +12,13 @@ func _ready():
 
 	#fade in when a scene is selected  
 func on_Button_pressed(scene_to_load):
-	scene_path_to_load = scene_to_load
-	$FadeIn.show()
-	$FadeIn.fade_in()
+	if(scene_to_load == ""):
+		get_tree().quit()
 	
+	else:
+		scene_path_to_load = scene_to_load
+		$FadeIn.show()
+		$FadeIn.fade_in()
 	
 	#when the fade in finished, show the selected scene
 func _on_FadeIn_fade_finished():
