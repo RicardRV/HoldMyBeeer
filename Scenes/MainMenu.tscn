@@ -26,45 +26,54 @@ __meta__ = {
 }
 
 [node name="Menu" type="VBoxContainer" parent="."]
-margin_left = 432.067
-margin_top = 366.073
-margin_right = 792.067
-margin_bottom = 646.073
+margin_left = 435.022
+margin_top = 288.518
+margin_right = 795.022
+margin_bottom = 642.518
+alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CenterRow" type="HBoxContainer" parent="Menu"]
+margin_top = 77.0
 margin_right = 360.0
-margin_bottom = 220.0
+margin_bottom = 277.0
 rect_pivot_offset = Vector2( 274.991, 163.731 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
 
 [node name="Buttons" type="VBoxContainer" parent="Menu/CenterRow"]
 margin_right = 360.0
-margin_bottom = 220.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_constants/separation = 20
+margin_bottom = 200.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_constants/separation = 10
 alignment = 1
 
 [node name="NewGameButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 2 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
+anchor_left = 0.0111111
+anchor_top = -0.025
+anchor_right = 0.0111111
+anchor_bottom = -0.025
 margin_right = 360.0
 margin_bottom = 60.0
+custom_colors/font_color = Color( 0.984314, 0.984314, 0.984314, 1 )
 scene_to_load = "res://Scenes/TileMap.tscn"
 
 [node name="ContinueButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
-margin_top = 80.0
+margin_top = 70.0
 margin_right = 360.0
-margin_bottom = 140.0
+margin_bottom = 130.0
+custom_colors/font_color = Color( 0.984314, 0.984314, 0.984314, 1 )
 
 [node name="OptionsButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 5 )]
-margin_top = 160.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 140.0
 margin_right = 360.0
-margin_bottom = 220.0
+margin_bottom = 200.0
+custom_colors/font_color = Color( 0.984314, 0.984314, 0.984314, 1 )
 scene_to_load = "res://Scenes/Options.tscn"
 
 [node name="FadeIn" parent="." instance=ExtResource( 3 )]
