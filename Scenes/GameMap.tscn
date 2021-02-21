@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Assets/CliffTileset.png" type="Texture" id=1]
 [ext_resource path="res://Game/Goal.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Game/Beer.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scripts/MapScript.gd" type="Script" id=4]
+[ext_resource path="res://Game/EndOfMap.tscn" type="PackedScene" id=5]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 30.8202, -0.35495, 31.7847, 5.4321, -0.52626, 4.94983 )
@@ -155,4 +156,10 @@ tile_data = PoolIntArray( 262147, 2, 0, 262148, 2, 1, 262149, 2, 1, 262150, 2, 1
 position = Vector2( 129.644, 199.798 )
 
 [node name="Goal" parent="MapSort" instance=ExtResource( 2 )]
-position = Vector2( 844.35, 130.367 )
+position = Vector2( 846.764, 131.068 )
+
+[node name="EndOfMap" parent="MapSort" instance=ExtResource( 5 )]
+position = Vector2( 900.086, 247.948 )
+collision_layer = 0
+collision_mask = 2
+[connection signal="body_entered" from="MapSort/EndOfMap" to="." method="_on_EndOfMap_body_entered"]
